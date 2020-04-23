@@ -8,7 +8,7 @@ html, body {
     height: 700px;
     padding: 5px;
     margin: 0 auto;
-    background-color:turquoise;
+    background-color:orange;
     float: middle;
     border: solid;
 }
@@ -94,7 +94,7 @@ html, body {
     height: 100px;
     max-height: 200px;
     float:left;
-    border: solid: darkcyan;
+    border: solid;
 }
 #sendBtn {
     width: 50px;
