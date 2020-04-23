@@ -1,18 +1,12 @@
-/*
- *hichat v0.4.2
- *Wayou Mar 28,2014
- *MIT license
- *view on GitHub:https://github.com/wayou/HiChat
- *see it in action:http://hichat.herokuapp.com/
- */
+
 window.onload = function() {
-    var hichat = new HiChat();
-    hichat.init();
+    var livechat = new LiveChat();
+    livechat.init();
 };
-var HiChat = function() {
+var LiveChat = function() {
     this.socket = null;
 };
-HiChat.prototype = {
+LiveChat.prototype = {
     init: function() {
         var that = this;
         this.socket = io.connect();
