@@ -139,7 +139,8 @@ LiveChat.prototype = {
             //determine whether the msg contains emoji
             msg = this._showEmoji(msg);
         msgToDisplay.style.color = color || '#000';
-        msgToDisplay.innerHTML = user + '<span class="timespan">(' + date + '): </span>' + msg;
+        //msg.style.color = '#ff0000';
+        msgToDisplay.innerHTML = user + '<span class="timespan">(' + date + '): </span>'+ '</br>'+'</br>'+'<span class="messages">' + msg + '</span>';
         container.appendChild(msgToDisplay);
         container.scrollTop = container.scrollHeight;
     },

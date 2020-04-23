@@ -5,10 +5,12 @@ html, body {
 }
 .wrapper {
     width: 500px;
-    height: 640px;
+    height: 700px;
     padding: 5px;
     margin: 0 auto;
     background-color:turquoise;
+    float: middle;
+    border: solid;
 }
 #loginWrapper {
     position: fixed;
@@ -24,14 +26,19 @@ html, body {
 }
 #nickWrapper {
     display: none;
+    padding: 20px;
 }
 .banner {
-    height: 80px;
+    height: 100px;
     width: 100%;
+    font-style: oblique;
+
 }
 .banner p {
-    float: left;
+    float:left;
     display: inline-block;
+    border: solid;
+
 }
 .controls {
     height: 100px;
@@ -40,15 +47,24 @@ html, body {
 }
 #historyMsg {
     height: 400px;
+    width: 450px;
+    margin: auto;
+    border: solid darkcyan;
     background-color: #fff;
     overflow: auto;
-    padding: 0px;
+    padding: 2px;
 }
 #historyMsg img {
     max-width: 99%;
 }
 .timespan {
     color: #ddd;
+
+}
+.messages {
+    float: right;
+    color: darkcyan;
+    font-style: italic;
 }
 .items {
     height: 30px;
@@ -75,9 +91,10 @@ html, body {
 #messageInput {
     width: 440px;
     max-width: 440px;
-    height: 90px;
-    max-height: 90px;
+    height: 100px;
+    max-height: 200px;
     float:left;
+    border: solid: darkcyan;
 }
 #sendBtn {
     width: 50px;
@@ -90,7 +107,7 @@ html, body {
     bottom: 105px;
     position: absolute;
     background-color: #aaa;
-    box-shadow: 0 0 10px #555;
+    box-shadow: 0 0 10px red;
 }
 #emojiWrapper img {
     margin: 2px;
@@ -99,7 +116,7 @@ html, body {
     height: 25px;
 }
 #emojiWrapper img:hover {
-    background-color: blue;
+    background-color: darkcyan;
 }
 .emoji{
     display: inline;
