@@ -124,7 +124,7 @@ LiveChat.prototype = {
     _initialEmoji: function() {
         var emojiContainer = document.getElementById('emojiWrapper'),
             docFragment = document.createDocumentFragment();
-        for (var i = 69; i > 0; i--) {
+        for (var i = 80; i > 0; i--) {
             var emojiItem = document.createElement('img');
             emojiItem.src = '../content/emoji/' + i + '.gif';
             emojiItem.title = i;
@@ -149,7 +149,7 @@ LiveChat.prototype = {
             msgToDisplay = document.createElement('p'),
             date = new Date().toTimeString().substr(0, 8);
         msgToDisplay.style.color = color || '#000';
-        msgToDisplay.innerHTML = user + '<span class="timespan">(' + date + '): </span> <br/>' + '<a href="' + imgData + '" target="_blank"><img src="' + imgData + '"/></a>';
+        msgToDisplay.innerHTML = user + '<span class="timespan">(' + date + '): </span> <br/>' + '<a href="' + imgData + '" target="_blank"><img src="' + imgData + '"/></a></br>';
         container.appendChild(msgToDisplay);
         container.scrollTop = container.scrollHeight;
     },
@@ -163,7 +163,7 @@ LiveChat.prototype = {
             if (emojiIndex > totalEmojiNum) {
                 result = result.replace(match[0], '[X]');
             } else {
-                result = result.replace(match[0], '<img class="emoji" src="../content/emoji/' + emojiIndex + '.gif" />');//todo:fix this in chrome it will cause a new request for the image
+                result = result.replace(match[0], '<img class="emoji" src="../content/emoji/' + emojiIndex + '.gif" /></br>');//todo:fix this in chrome it will cause a new request for the image
             };
         };
         return result;
